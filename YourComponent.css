@@ -1,0 +1,44 @@
+/* YourComponent.css */
+
+.lazy-background {
+    position: relative;
+    height: 300px; /* Set a fixed height or adjust as needed */
+    background-image: url('https://media.istockphoto.com/id/1482792454/photo/asian-chinese-female-tourist-experiential-travel-cutting-potato-in-bhutanese-farmhouse.jpg?s=612x612&w=is&k=20&c=ZnYf4EL4yiSfM5f5uu30kUr0ViZmTFuQ6NMiI6c8CNE='); /* Replace with your actual background image path */
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0; /* Fallback background color if the image fails to load */
+    opacity: 0;
+    transform: translateY(20px); /* Initial transform to make it appear below before animation */
+  
+    transition: opacity 0.5s, transform 0.5s ease-in-out;
+  }
+  
+  .lazy-background.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .lazy-background h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .lazy-background p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .lazy-background a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Set your desired link button color */
+    color: #fff; /* Set text color for the link */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .lazy-background a:hover {
+    background-color: #0056b3; /* Set a darker color for the hover effect */
+  }
+  
